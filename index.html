@@ -42,14 +42,22 @@
         .btn:hover {
             background-color: #ff1493;
         }
+        input[type="email"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Un Mensaje Especial Para Ti 💖</h1>
         <p>Desde que te conocí, cada momento ha sido increíble. ¿Te gustaría ser mi pareja y hacer juntos muchos recuerdos hermosos? 😊</p>
-        <form action="https://formspree.io/f/your_form_id" method="POST">
-            <input type="hidden" name="email" value="iberarroyo71@gmail.com">
+        <form action="https://formspree.io/f/tu_id_formulario" method="POST">
+            <input type="email" name="_replyto" placeholder="Tu correo electrónico" required>
             <button class="btn" type="submit" name="response" value="Sí, quiero">Sí, quiero</button>
             <button class="btn" type="submit" name="response" value="Lo pensaré">Lo pensaré</button>
         </form>
